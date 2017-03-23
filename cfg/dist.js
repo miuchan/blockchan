@@ -16,16 +16,22 @@ let config = Object.assign({}, baseConfig, {
       path.join(__dirname, '../src/index')
     ],
     vendor: [
+      'core-js',
       'moment',
       'react',
+      'react-router',
       'react-dom',
-      'redux'
+      'redux',
+      'react-redux',
+      'material-ui',
+      'core-js'
     ]
   },
   cache: false,
-  devtool: 'sourcemap',
+  devtool: 'source-map',
   plugins: [
-    new webpack.optimize.CommonsChunkPlugin("vendor", "vendor.bundle.js"),
+    new webpack.optimize.CommonsChunkPlugin("vendor", 'vendor.bundle.js'),
+
     new webpack.optimize.DedupePlugin(),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': '"production"'
