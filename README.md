@@ -13,3 +13,10 @@ git clone https://github.com/miuchan/blockchan.git
 npm install
 npm run serve:dist
 ```
+
+## Todo
+
+- [] Write test.
+- [] Transactions page.
+- [] QR scanner.
+- [] Searching by block height, transaction id and other keywords.
