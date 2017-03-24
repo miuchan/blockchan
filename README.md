@@ -11,7 +11,7 @@ Node >= v7.7.2
 ``` shell
 git clone https://github.com/miuchan/blockchan.git
 npm install
-npm run serve:dist
+sudo node publicServer   // cause of listening any port below 1024 requires root access.
 ```
 
 ## Todo
