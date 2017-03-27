@@ -56,7 +56,7 @@ export const fetchBlock = (blockHash) => {
     dispatch(requestBlock());
     fetch(url)
     .then(res => {
-        return new Promise((resolve, reject) => {
+        return new Promise((resolve) => {
           let data = {
             ok: res.ok
           };
