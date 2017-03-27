@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link, browserHistory } from 'react-router';
+import { Link, hashHistory } from 'react-router';
 import TextField from 'material-ui/TextField';
 import FlatButton from 'material-ui/FlatButton';
 import FontIcon from 'material-ui/FontIcon';
@@ -28,7 +28,7 @@ class Nav extends Component {
   }
   onClickHander(event) {
     const { textFieldValue } = this.state;
-    browserHistory.push(`/block/${textFieldValue}`);
+    hashHistory.push(`/block/${textFieldValue}`);
   }
   render() {
 
